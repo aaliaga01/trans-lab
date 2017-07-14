@@ -43,3 +43,27 @@ $(document).ready(function(){
 
 })// ./termina función ready             
 
+	//---------- AJAX
+$(document).ready (function(){
+
+		/api/v1/solicitudes.json?bip={id}
+
+	$.ajax({
+		url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip={id}',
+		type: 'GET',
+		dataType: 'JSON',
+		data: {},
+	})
+	.done(function(r) {
+		mostrar(r.results);
+		console.log(r);
+		console.log("success");
+	})
+	.fail(function() {
+		console.log("error");
+	})
+	.always(function() {
+		console.log("complete");
+	});
+	
+});
