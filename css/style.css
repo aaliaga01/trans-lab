@@ -108,6 +108,7 @@ a{
 
 #menu{
 	background-color: silver;
+	height: 110vh;
 }
 
 nav{
@@ -158,8 +159,15 @@ li>i {
 	display: inline;
 	color: silver;
 	font-weight: 300;
+	padding: 20px;
 }
 
 #menu .dropdown-menu>li>a:hover{
+	background-color: whitesmoke;
+}
+
+.dropdown-menu{
+	margin: 0;
+	height: 100vh;
 }
 
