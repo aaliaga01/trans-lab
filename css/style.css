@@ -46,7 +46,7 @@ a{
 	font-weight: 300;
 }
 
-.ingreso button, .datos-perfil button{
+.ingreso button, .datos-perfil button, .datos-saldo button{
 	display: block;
 	width: 100%;
 	background-color: #EEA400;
@@ -164,14 +164,14 @@ li>i {
 	padding: 20px;
 }
 
-#menu .dropdown-menu>li>a, #perfil .dropdown-menu>li>a, #preguntas .dropdown-menu>li>a{
+#menu .dropdown-menu>li>a, #perfil .dropdown-menu>li>a, #preguntas .dropdown-menu>li>a, #saldo .dropdown-menu>li>a{
 	display: inline;
 	color: silver;
 	font-weight: 300;
 	padding: 20px;
 }
 
-#menu .dropdown-menu>li>a:hover, #perfil .dropdown-menu>li>a:hover, #preguntas .dropdown-menu>li>a:hover{
+#menu .dropdown-menu>li>a:hover, #perfil .dropdown-menu>li>a:hover, #preguntas .dropdown-menu>li>a:hover, #saldo .dropdown-menu>li>a:hover{
 	background-color: whitesmoke;
 }
 
@@ -275,9 +275,60 @@ li>i {
 	text-decoration: none;
 	color: silver;
 }
+/*-----------------------*/
 
-#preguntas{
-
+/*estilo seccion SALDO*/
+.datos-saldo{
+	margin: 30px 0;
 }
 
+.datos-saldo p{
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	padding: 10px;
+	color: silver;
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.datos-saldo input{
+	background-color: transparent;
+	border: none;
+	border-bottom: solid 1px grey;
+	width: 100%;
+	height: 40px;
+}
+
+#num-bip{
+	margin: 15px 0;
+}
+
+#num-bip::placeholder{
+	color: grey;
+	font-weight: 300;
+}
+
+#saldo .ag-tarjeta{
+	margin-top: 30px;
+}
+
+.titulo-saldo{
+	background-color: #414042;
+	color: white;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.saldo-total{
+	text-align: center;
+	background-color: #EEA400;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 40px;
+	color: white;
+}
+
+#total{
+}
 
