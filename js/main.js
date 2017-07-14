@@ -31,8 +31,15 @@ $(document).ready(function(){
     	$("#usuario-email span").text(eMail);
 
 
-	//-------- Mostrar email del usuraio/		
+	//-------- ingresar y mostrar Nº BIP/
+	$(".ag-tarjeta").click(function() {
 
+	   	var miBip = $("#num-tarjeta").val();
+    	localStorage.numBip = miBip;
+
+    	var bip = localStorage.getItem("numBip");      
+    	$(".datos-perfil").append("<p id='lista-bip'>" + bip + "</p>");
+    });
 
 })// ./termina función ready             
 

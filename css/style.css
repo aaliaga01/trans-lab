@@ -205,7 +205,7 @@ li>i {
 }
 
 .datos-perfil{
-	margin: 30px 0;
+	margin: 40px 0;
 }
 
 .datos-perfil p{
@@ -233,6 +233,19 @@ li>i {
 #num-tarjeta::placeholder{
 	color: grey;
 	font-weight: 300;
+}
+
+.datos-perfil button{
+	margin-bottom:40px;
+}
+
+#lista-bip{
+	background-color: white;
+	width: 100%;
+	color: grey;
+	font-size: 18px;
+	text-align: left;
+	padding: 10px;
 }
 /*-----------------------*/
 
