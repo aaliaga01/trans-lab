@@ -6,7 +6,6 @@ gris claro: #D6D7D9
 */
 
 body{
-	background-color: #414042;
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -16,6 +15,9 @@ a{
 }
 
 /*-----estilos INICIO*/
+#inicio{
+	background-color: #414042;
+}
 
 .logo{
 	margin-top: 90px;
@@ -101,4 +103,63 @@ a{
 	padding-left: 30px; 
 }
 /*-----------------------*/
+
+/*estilos seccion MENU*/
+
+#menu{
+	background-color: silver;
+}
+
+nav{
+	background-color: #414042;
+}
+
+.icono-menu{
+	background-color: transparent;
+}
+
+.fa-bars{
+	color: white;
+}
+
+.icono-menu	{
+	border: none;
+}
+
+#menu .btn-default:hover{
+	background-color: transparent;
+}
+
+.menu{
+	margin-top: 150px;
+	margin-bottom: 150px
+}
+
+.menu a{
+	width: 100%;
+	height: 35px;
+	font-size: 15px;
+	background-color: #EEA400;
+	color: white;
+	margin-top: 10px;
+	padding-top: 10px;
+	display: block;
+	text-align: center;
+	font-weight: 300;
+	text-decoration: none;
+}
+
+li>i {
+	color: #EEA400;
+	padding: 20px;
+}
+
+#menu .dropdown-menu>li>a{
+	display: inline;
+	color: silver;
+	font-weight: 300;
+}
+
+#menu .dropdown-menu>li>a:hover{
+}
 
