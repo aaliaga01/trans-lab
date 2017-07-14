@@ -164,14 +164,14 @@ li>i {
 	padding: 20px;
 }
 
-#menu .dropdown-menu>li>a{
+#menu .dropdown-menu>li>a, #perfil .dropdown-menu>li>a{
 	display: inline;
 	color: silver;
 	font-weight: 300;
 	padding: 20px;
 }
 
-#menu .dropdown-menu>li>a:hover{
+#menu .dropdown-menu>li>a:hover, #perfil .dropdown-menu>li>a:hover{
 	background-color: whitesmoke;
 }
 
@@ -180,3 +180,17 @@ li>i {
 	height: 100vh;
 }
 
+/*estilos seccion PERFIL*/
+
+.fondo-amarillo{
+	background-color: yellow;
+}
+
+.imagen-perfil{
+	width: 25%;
+	margin: 0 auto;
+}
+
+.imagen-perfil img{
+	width: 100%;
+}
