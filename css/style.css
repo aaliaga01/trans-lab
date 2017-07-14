@@ -164,14 +164,16 @@ li>i {
 	padding: 20px;
 }
 
-#menu .dropdown-menu>li>a, #perfil .dropdown-menu>li>a, #preguntas .dropdown-menu>li>a, #saldo .dropdown-menu>li>a{
+#menu .dropdown-menu>li>a, #perfil .dropdown-menu>li>a, #preguntas .dropdown-menu>li>a, #saldo .dropdown-menu>li>a,
+#tarifa .dropdown-menu>li>a{
 	display: inline;
 	color: silver;
 	font-weight: 300;
 	padding: 20px;
 }
 
-#menu .dropdown-menu>li>a:hover, #perfil .dropdown-menu>li>a:hover, #preguntas .dropdown-menu>li>a:hover, #saldo .dropdown-menu>li>a:hover{
+#menu .dropdown-menu>li>a:hover, #perfil .dropdown-menu>li>a:hover, #preguntas .dropdown-menu>li>a:hover, 
+#saldo .dropdown-menu>li>a:hover,  #tarifa .dropdown-menu>li>a:hover{
 	background-color: whitesmoke;
 }
 
