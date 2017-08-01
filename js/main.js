@@ -34,36 +34,42 @@ $(document).ready(function(){
 	//-------- ingresar y mostrar Nº BIP/
 	$(".ag-tarjeta").click(function() {
 
-	   	var miBip = $("#num-tarjeta").val();
-    	localStorage.numBip = miBip;
-
-    	var bip = localStorage.getItem("numBip");      
+	   	var miBip = $("#num-tarjeta").val(); //toma el valor del input
+    	localStorage.numBip = miBip; //lo guarda en localStorage
+    	var bip = localStorage.getItem("numBip"); 
     	$(".datos-perfil").append("<p id='lista-bip'>" + bip + "</p>");
-    });
+      });
 
-})// ./termina función ready             
+});// ./termina función ready             
 
-	//---------- AJAX
+//---------- AJAX
 $(document).ready (function(){
 
-		/api/v1/solicitudes.json?bip={id}
+	$("#ver-saldo").click(function() {
 
-	$.ajax({
-		url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip={id}',
+		// toma el numero de tarjeta introducido en input
+			var tarjeta = $("#num-bip").val();
+
+		$.ajax( {
+		url: "http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip="+ tarjeta, //se pasa la variable que contiene el llamado a la API + el numero de bip
 		type: 'GET',
 		dataType: 'JSON',
-		data: {},
+		})
+		.done(function(response) {
+			console.log("success2");// para ver si funciona
+
+			//escribe en el ID el valor correspondiente desde la API
+			$("#total").text(response.saldoTarjeta);
+			
+			var saldoOb = response.saldoTarjeta;
+			console.log("saldo", saldoOb);//prueba, para ver si llama el saldo de la tarjeta
+
+		})
+		.fail(function() {
+			console.log("error");
+		})
+		.always(function() {
+			console.log("complete");
+		});
 	})
-	.done(function(r) {
-		mostrar(r.results);
-		console.log(r);
-		console.log("success");
-	})
-	.fail(function() {
-		console.log("error");
-	})
-	.always(function() {
-		console.log("complete");
-	});
-	
 });
